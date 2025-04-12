@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .BoxPrincipale{
+    max-width: 430px;
+    margin: auto;    /* nel caso che il schermo del dispos, sara piu grande del 430px margin mettera in mezzo*/
+    height: 100dvh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+
+ } 
+ .BoxPrincipale::-webkit-scrollbar{  /* disatica scroll bar sul webkit*/
+    display: none;
+ }
+
+ .screen{
+    height: 100%;
+    scroll-snap-align: start;
+    position: relative;
+ }
+ 
+ 
+
+ img, video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block; /* cancella scriscia in sonfo al screen(se vedeva solo al ultimo video del scroll) */
+ }
+
+ .iconDestra{
+    position:absolute;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    right: 15px;
+    bottom: 100px;
+ }
+
+ 
+
+ .iconDestra i {
+    color: #000000; 
+    text-shadow: 0 0 10px #e1c9c9, 0 0 10px #bee2cd;
+ }
+
+ 
+
+ .titol  {
+    position: absolute;
+    bottom: 20px;
+    font-size: 25px;
+    color: #000000; 
+    text-shadow: 0 0 10px #e1c9c9, 0 0 10px #bee2cd;
+ }
+
+ h4, .descrizion{
+    margin-bottom: 10px;
+ }
+
